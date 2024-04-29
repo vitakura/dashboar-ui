@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashoard responsiva | Itakura</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span>Dash</span>board</div>
+        </a>
+        <ul class="side-menu">
+          <li><a href="index.html"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+          <li><a href="graficos.html"><i class='bx bx-analyse'></i>Graficos</a></li>
+          <li class="active"><a href="bilhetes.html"><i class='bx bx-message-square-dots'></i>Bilhetes</a></li>
+          <li><a href="#"><i class='bx bx-group'></i>Usuarios</a></li>
+          <li><a href="config.html"><i class='bx bx-cog'></i>Configuracao</a></li>
+      </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    sair
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="images/logo.png">
+            </a>
+        </nav>
+
+        <!-- final da arra de navegacao -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Processos</h1>
+                    <ul class="breadcrumb">
+                        
+                </div>
+                <a href="#" class="report">
+                    <i class='bx bx-cloud-download'></i>
+                    <span>carregar arquivo</span>
+                </a>
+            </div>
+
+            <!-- Insights -->
+            <ul class="insights">
+                <li><a href="/extrair.html">
+                    <span class="info">
+                       
+                        <p>Extrair</p>
+                    </span>
+                  </a>
+                </li>   
+                <li><a href="/adicionarprojeto.html">
+                    <span class="info">
+                       
+                        <p>Adicionar modelo</p>
+                    </span>
+                  </a>
+                </li>
+                <li><a href="/remover.html">
+                    <span class="info">
+                        
+                        <p>Remover modelo</p>
+                    </span>
+                  </a>
+                </li>
+                <li><a href="/renomear.html">
+                    <span class="info">
+                        
+                        <p>Renomear modelo</p>
+                    </span>
+                  </a>
+                </li>
+                <li><a href="/camposrenomear.html">
+                    <span class="info">
+                        <p>Renomear campos</p>
+                    </span>
+                  </a>
+                </li>
+            </ul>
+            </div>
+
+        </main>
+
+    <div class="content-2">
+      <h2 class="add-model">renomear modelo</h2> 
+      <form action="/rename\_model" method="post" class="select-folder"> 
+        selecionar modelo: 
+        <select name="model\_name" class="model-name"> 
+          {% for model in models %}   
+          <option value="{{ model.name }}" class="model-name-text"> nome do modelo</option> 
+          {% endfor %} 
+        </select>
+        <br> Novo nome: <input type="text" name="new\_name" class="new-name"><br>
+         <input type="submit" value="confirmar"class="name-model-button-submit">
+         </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

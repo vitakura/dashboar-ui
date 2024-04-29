@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashoard responsiva | Itakura</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span>Dash</span>board</div>
+        </a>
+        <ul class="side-menu">
+          <li><a href="index.html"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+          <li><a href="graficos.html"><i class='bx bx-analyse'></i>Graficos</a></li>
+          <li class="active"><a href="bilhetes.html"><i class='bx bx-message-square-dots'></i>Bilhetes</a></li>
+          <li><a href="#"><i class='bx bx-group'></i>Usuarios</a></li>
+          <li><a href="config.html"><i class='bx bx-cog'></i>Configuracao</a></li>
+      </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    sair
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="images/logo.png">
+            </a>
+        </nav>
+
+        <!-- final da arra de navegacao -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Processos</h1>
+                    <ul class="breadcrumb">
+                        
+                </div>
+                <a href="#" class="report">
+                    <i class='bx bx-cloud-download'></i>
+                    <span>carregar arquivo</span>
+                </a>
+            </div>
+
+            <!-- Insights -->
+            <ul class="insights">
+                <li><a href="/extrair.html">
+                    <span class="info">
+                       
+                        <p>Extrair</p>
+                    </span>
+                  </a>
+                </li>
+                <li><a href="/adicionarprojeto.html">
+                    <span class="info">
+                       
+                        <p>Adicionar modelo</p>
+                    </span>
+                  </a>
+                </li>
+                <li><a href="/remover.html">
+                    <span class="info">
+                        
+                        <p>Remover modelo</p>
+                    </span>
+                  </a>
+                </li>
+                <li><a href="/renomear.html">
+                    <span class="info">
+                        
+                        <p>Renomear modelo</p>
+                    </span>
+                  </a>
+                </li>
+                <li><a href="/camposrenomear.html">
+                    <span class="info">
+                        <p>Renomear campos</p>
+                    </span>
+                  </a>
+                </li>
+                
+            </ul>
+            <!-- End of Insights -->
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Ordens recentes</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>CNPJ</th>
+                                <th>Endereco</th>
+                                <th>Valor</th>
+                                <th>Venciemnto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>28/04/2024</td>
+                                <td>86466963594</td>
+                                <td>21 de abril</td>
+                                <td>R$854</td>
+                                <td>28/04/2025</td>
+                                <td>Prestação de Serviço</td>
+                                <td>
+                                  <button class="button-3-points"><i class='bx bx-dots-vertical-rounded'></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15/06/2023</td>
+                                <td>74136987542</td>
+                                <td>Av. Ibirapuera</td>
+                                <td>R$9000</td>
+                                <td>30/09/2023</td>
+                                <td>Fornecimento</td>
+                                <td>
+                                  <button class="button-3-points"><i class='bx bx-dots-vertical-rounded'></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>08/11/2022</td>
+                                <td>35974156248</td>
+                                <td>451, av. são rafael</td>
+                                <td>R$6300</td>
+                                <td>14/01/2023</td>
+                                <td>Equipamentos</td>
+                                <td>
+                                  <button class="button-3-points"><i class='bx bx-dots-vertical-rounded'></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>30/03/2022</td>
+                                <td>52693418725</td>
+                                <td>456, rua jequ</td>
+                                <td>R$751</td>
+                                <td>30/04/2022</td>
+                                <td>NDA</td>
+                                <td>
+                                  <button class="button-3-points"><i class='bx bx-dots-vertical-rounded'></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            
+
+        </main>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
